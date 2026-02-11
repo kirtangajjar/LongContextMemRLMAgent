@@ -1,67 +1,26 @@
 # LongContextMemRLMAgent
 
-## Quickstart: download a benchmark + run baseline agent
+## Simple baseline runner
 
-This repo now includes a minimal end-to-end path:
-1. Download a benchmark split from Hugging Face into JSONL
-2. Run baseline evaluation with one model call per question (no tools)
+Use `scripts/run_baseline.py` to run a minimal baseline over a JSONL benchmark.
 
-## 1) Install dependencies
+### Input format
+Each JSONL row should include:
+- `question` (required)
+- `id` (optional)
+- `answer` or `gold` or `target` (optional, used for exact-match scoring)
 
-```bash
-pip install datasets google-genai
-```
-
-## 2) Download benchmark to JSONL
-
-Use `scripts/download_benchmark.py`.
-
-Example (GSM8K test subset of 100 rows):
-
-```bash
-python scripts/download_benchmark.py \
-  --dataset gsm8k \
-  --config main \
-  --split test \
-  --question-field question \
-  --answer-field answer \
-  --max-rows 100 \
-  --output data/gsm8k_test_100.jsonl
-```
-
-## 3) Run baseline on Gemini Flash
-
-Set your API key:
-
-```bash
-export GEMINI_API_KEY=...your_key...
-```
-
-Then run:
-
+### Example
 ```bash
 python scripts/run_baseline.py \
-  --input data/gsm8k_test_100.jsonl \
-  --output-dir results/gemini_flash_baseline \
-  --solver-cmd "python scripts/gemini_solver.py --question {question} --model gemini-2.0-flash" \
-  --timeout 90
+  --input data/benchmark.jsonl \
+  --output-dir results/baseline \
+  --solver-cmd "python my_solver.py --question {question}" \
+  --timeout 60
 ```
 
-## Scripts
+Outputs:
+- `predictions.jsonl`
+- `metrics.json`
 
-### `scripts/download_benchmark.py`
-Downloads any Hugging Face dataset split and writes a compact JSONL with:
-- `id`
-- `question`
-- `answer` (if available)
-
-### `scripts/run_baseline.py`
-Runs minimal baseline eval over JSONL rows:
-- one solver command per question
-- exact-match scoring when `answer`/`gold`/`target` exists
-- writes `predictions.jsonl` and `metrics.json`
-
-### `scripts/gemini_solver.py`
-Single-question Gemini client used by `run_baseline.py`.
-- requires `GEMINI_API_KEY`
-- defaults to `gemini-2.0-flash`
+If no gold answers are present, the script still writes predictions and latency metrics.
