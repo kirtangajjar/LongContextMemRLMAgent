@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
-"""Simple baseline runner for 500-question evaluation sets.
+"""Simple baseline runner for benchmark evaluation.
 
-Input format: JSONL where each row contains:
-- id (optional)
-- question (required)
-- answer OR gold OR target (optional, for scoring)
+Supports:
+- Local JSONL input (`--input`)
+- Hugging Face JSON file input (`--hf-dataset` + `--hf-file`)
+- Solver via shell command template (`--solver cmd` + `--solver-cmd`)
+- Direct Gemini API calls (`--solver gemini`)
 
-This script intentionally keeps the baseline simple:
-- no tools
-- one model call per question via a shell command template
-- exact-match scoring when gold answers are present
+Input rows must have `question` and may have `id` plus one of `answer|gold|target`.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import shlex
 import subprocess
 import time
@@ -37,30 +36,45 @@ class Result:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run a simple baseline evaluation.")
-    parser.add_argument("--input", required=True, help="Path to input JSONL file")
+    input_group = parser.add_mutually_exclusive_group(required=True)
+    input_group.add_argument("--input", help="Path to input JSONL file")
+    input_group.add_argument("--hf-dataset", help="Hugging Face dataset repo id (e.g., xiaowu0162/longmemeval-cleaned)")
+
+    parser.add_argument("--hf-file", help="File name in HF dataset repo (required with --hf-dataset)")
     parser.add_argument(
         "--output-dir",
         default="results/baseline",
         help="Directory for predictions.jsonl and metrics.json",
     )
     parser.add_argument(
+        "--solver",
+        choices=["cmd", "gemini"],
+        default="cmd",
+        help="Answer generation backend",
+    )
+    parser.add_argument(
         "--solver-cmd",
         default="python -c \"print('')\"",
         help=(
-            "Shell command template used to answer each question. "
-            "Use {question} placeholder, e.g. "
-            "\"python my_solver.py --question {question}\""
+            "Shell command template used to answer each question (solver=cmd). "
+            "Use {question} placeholder, e.g. \"python my_solver.py --question {question}\""
         ),
     )
+    parser.add_argument("--gemini-model", default="gemini-2.0-flash", help="Gemini model id for solver=gemini")
+    parser.add_argument("--max-questions", type=int, default=None, help="Optional cap on number of questions")
     parser.add_argument("--timeout", type=float, default=60.0, help="Per-question timeout in seconds")
-    return parser.parse_args()
+    args = parser.parse_args()
+
+    if args.hf_dataset and not args.hf_file:
+        parser.error("--hf-file is required when using --hf-dataset")
+    return args
 
 
 def normalize(text: str) -> str:
     return " ".join(text.strip().lower().split())
 
 
-def run_solver(command_template: str, question: str, timeout_s: float) -> tuple[str, float, str | None]:
+def run_cmd_solver(command_template: str, question: str, timeout_s: float) -> tuple[str, float, str | None]:
     command = command_template.format(question=shlex.quote(question))
     start = time.perf_counter()
     try:
@@ -81,7 +95,36 @@ def run_solver(command_template: str, question: str, timeout_s: float) -> tuple[
         return "", latency, f"timeout after {timeout_s:.1f}s"
 
 
-def load_dataset(path: Path) -> list[dict[str, Any]]:
+def build_gemini_solver(model: str):
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY is required when --solver gemini")
+    from google import genai
+
+    client = genai.Client(api_key=api_key)
+
+    def _solve(question: str, timeout_s: float) -> tuple[str, float, str | None]:
+        _ = timeout_s
+        start = time.perf_counter()
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=question,
+                config={
+                    "temperature": 0.0,
+                    "system_instruction": "You are a concise QA assistant. Return only the final answer.",
+                },
+            )
+            latency = time.perf_counter() - start
+            return (response.text or "").strip(), latency, None
+        except Exception as exc:  # noqa: BLE001
+            latency = time.perf_counter() - start
+            return "", latency, str(exc)
+
+    return _solve
+
+
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     with path.open("r", encoding="utf-8") as f:
         for line_no, line in enumerate(f, start=1):
@@ -95,23 +138,66 @@ def load_dataset(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def load_hf_json_file(dataset_repo: str, filename: str) -> list[dict[str, Any]]:
+    from huggingface_hub import hf_hub_download
+
+    local_path = Path(hf_hub_download(repo_id=dataset_repo, repo_type="dataset", filename=filename))
+    with local_path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if isinstance(data, dict):
+        if "data" in data and isinstance(data["data"], list):
+            records = data["data"]
+        else:
+            raise ValueError("Unsupported JSON object format in HF file")
+    elif isinstance(data, list):
+        records = data
+    else:
+        raise ValueError("HF file must be a JSON list or object with `data` list")
+
+    rows: list[dict[str, Any]] = []
+    for rec in records:
+        if isinstance(rec, dict) and "question" in rec:
+            rows.append(rec)
+    if not rows:
+        raise ValueError("No usable rows with `question` found in HF file")
+    return rows
+
+
 def main() -> None:
     args = parse_args()
-    input_path = Path(args.input)
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    rows = load_dataset(input_path)
-    results: list[Result] = []
+    if args.hf_dataset:
+        rows = load_hf_json_file(args.hf_dataset, args.hf_file)
+        input_label = f"hf://{args.hf_dataset}/{args.hf_file}"
+    else:
+        input_path = Path(args.input)
+        rows = load_jsonl(input_path)
+        input_label = str(input_path)
 
-    for idx, row in enumerate(rows):
+    if args.max_questions is not None:
+        rows = rows[: args.max_questions]
+
+    if args.solver == "gemini":
+        solve = build_gemini_solver(args.gemini_model)
+    else:
+        solve = lambda q, t: run_cmd_solver(args.solver_cmd, q, t)
+
+    results: list[Result] = []
+    total = len(rows)
+    for idx, row in enumerate(rows, start=1):
         qid = str(row.get("id", idx))
         question = str(row["question"])
         gold = row.get("answer", row.get("gold", row.get("target")))
         gold = None if gold is None else str(gold)
 
-        prediction, latency_s, error = run_solver(args.solver_cmd, question, args.timeout)
+        print(f"[{idx}/{total}] start id={qid}", flush=True)
+        prediction, latency_s, error = solve(question, args.timeout)
         correct = None if gold is None else (normalize(prediction) == normalize(gold))
+        status = "ok" if error is None else f"error={error}"
+        print(f"[{idx}/{total}] done id={qid} latency_s={latency_s:.2f} {status}", flush=True)
 
         results.append(
             Result(
@@ -152,9 +238,11 @@ def main() -> None:
         "correct": n_correct,
         "accuracy": (n_correct / len(scored)) if scored else None,
         "avg_latency_s": (sum(r.latency_s for r in results) / len(results)) if results else 0.0,
-        "solver_cmd": args.solver_cmd,
+        "solver": args.solver,
+        "solver_cmd": args.solver_cmd if args.solver == "cmd" else None,
+        "gemini_model": args.gemini_model if args.solver == "gemini" else None,
         "timeout_s": args.timeout,
-        "input": str(input_path),
+        "input": input_label,
     }
 
     metrics_path = output_dir / "metrics.json"

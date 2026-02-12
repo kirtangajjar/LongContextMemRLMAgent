@@ -1,26 +1,48 @@
 # LongContextMemRLMAgent
 
-## Simple baseline runner
+## Baseline benchmark runner
 
-Use `scripts/run_baseline.py` to run a minimal baseline over a JSONL benchmark.
+Use `scripts/run_baseline.py` for simple, single-turn baseline evaluation.
 
-### Input format
-Each JSONL row should include:
+### Supported inputs
+- Local JSONL via `--input`
+- Hugging Face dataset JSON file via `--hf-dataset` + `--hf-file`
+
+Each row should include:
 - `question` (required)
 - `id` (optional)
 - `answer` or `gold` or `target` (optional, used for exact-match scoring)
 
-### Example
+### Solver modes
+- `--solver cmd` (default): runs `--solver-cmd` template with `{question}`
+- `--solver gemini`: uses Gemini directly with `GEMINI_API_KEY`
+
+### Example: local JSONL with command solver
 ```bash
 python scripts/run_baseline.py \
   --input data/benchmark.jsonl \
-  --output-dir results/baseline \
+  --output-dir results/baseline_cmd \
+  --solver cmd \
   --solver-cmd "python my_solver.py --question {question}" \
   --timeout 60
 ```
 
-Outputs:
+### Example: LongMemEval from Hugging Face with Gemini
+```bash
+export GEMINI_API_KEY="<your_key>"
+python scripts/run_baseline.py \
+  --solver gemini \
+  --gemini-model gemini-2.0-flash \
+  --hf-dataset xiaowu0162/longmemeval-cleaned \
+  --hf-file longmemeval_oracle.json \
+  --output-dir results/longmemeval_cleaned_oracle_full \
+  --timeout 120
+```
+
+### Outputs
 - `predictions.jsonl`
 - `metrics.json`
 
-If no gold answers are present, the script still writes predictions and latency metrics.
+The runner logs question-level progress in stdout as:
+- `[idx/total] start id=...`
+- `[idx/total] done id=... latency_s=...`
