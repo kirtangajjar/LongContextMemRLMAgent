@@ -1,0 +1,1003 @@
+[1/500] start id=gpt4_2655b836
+[1/500] done id=gpt4_2655b836 latency_s=0.87 ok strict=False relaxed=False
+[2/500] start id=gpt4_2487a7cb
+[2/500] done id=gpt4_2487a7cb latency_s=0.63 ok strict=False relaxed=False
+[3/500] start id=gpt4_76048e76
+[3/500] done id=gpt4_76048e76 latency_s=0.55 ok strict=False relaxed=False
+[4/500] start id=gpt4_2312f94c
+[4/500] done id=gpt4_2312f94c latency_s=0.62 ok strict=False relaxed=False
+[5/500] start id=0bb5a684
+[5/500] done id=0bb5a684 latency_s=0.45 ok strict=False relaxed=False
+[6/500] start id=08f4fc43
+[6/500] done id=08f4fc43 latency_s=0.49 ok strict=False relaxed=False
+[7/500] start id=2c63a862
+[7/500] done id=2c63a862 latency_s=0.52 ok strict=False relaxed=True
+[8/500] start id=gpt4_385a5000
+[8/500] done id=gpt4_385a5000 latency_s=0.64 ok strict=False relaxed=False
+[9/500] start id=2a1811e2
+[9/500] done id=2a1811e2 latency_s=0.54 ok strict=False relaxed=True
+[10/500] start id=bbf86515
+[10/500] done id=bbf86515 latency_s=0.63 ok strict=False relaxed=True
+[11/500] start id=gpt4_5dcc0aab
+[11/500] done id=gpt4_5dcc0aab latency_s=0.75 ok strict=True relaxed=True
+[12/500] start id=gpt4_0b2f1d21
+[12/500] done id=gpt4_0b2f1d21 latency_s=0.70 ok strict=False relaxed=False
+[13/500] start id=f0853d11
+[13/500] done id=f0853d11 latency_s=0.55 ok strict=False relaxed=False
+[14/500] start id=gpt4_6ed717ea
+[14/500] done id=gpt4_6ed717ea latency_s=0.67 ok strict=False relaxed=False
+[15/500] start id=gpt4_70e84552
+[15/500] done id=gpt4_70e84552 latency_s=0.63 ok strict=False relaxed=False
+[16/500] start id=a3838d2b
+[16/500] done id=a3838d2b latency_s=0.71 ok strict=False relaxed=False
+[17/500] start id=gpt4_93159ced
+[17/500] done id=gpt4_93159ced latency_s=0.50 ok strict=False relaxed=False
+[18/500] start id=gpt4_2d58bcd6
+[18/500] done id=gpt4_2d58bcd6 latency_s=0.55 ok strict=False relaxed=True
+[19/500] start id=gpt4_65aabe59
+[19/500] done id=gpt4_65aabe59 latency_s=0.57 ok strict=False relaxed=False
+[20/500] start id=982b5123
+[20/500] done id=982b5123 latency_s=0.52 ok strict=False relaxed=False
+[21/500] start id=b9cfe692
+[21/500] done id=b9cfe692 latency_s=0.57 ok strict=False relaxed=True
+[22/500] start id=gpt4_4edbafa2
+[22/500] done id=gpt4_4edbafa2 latency_s=0.59 ok strict=False relaxed=True
+[23/500] start id=c8090214
+[23/500] done id=c8090214 latency_s=0.57 ok strict=False relaxed=False
+[24/500] start id=gpt4_483dd43c
+[24/500] done id=gpt4_483dd43c latency_s=0.61 ok strict=False relaxed=False
+[25/500] start id=e4e14d04
+[25/500] done id=e4e14d04 latency_s=0.63 ok strict=False relaxed=False
+[26/500] start id=c9f37c46
+[26/500] done id=c9f37c46 latency_s=0.50 ok strict=False relaxed=False
+[27/500] start id=gpt4_2c50253f
+[27/500] done id=gpt4_2c50253f latency_s=0.61 ok strict=False relaxed=False
+[28/500] start id=dcfa8644
+[28/500] done id=dcfa8644 latency_s=0.45 ok strict=False relaxed=False
+[29/500] start id=gpt4_b4a80587
+[29/500] done id=gpt4_b4a80587 latency_s=0.54 ok strict=False relaxed=False
+[30/500] start id=gpt4_9a159967
+[30/500] done id=gpt4_9a159967 latency_s=0.45 ok strict=False relaxed=True
+[31/500] start id=cc6d1ec1
+[31/500] done id=cc6d1ec1 latency_s=0.53 ok strict=False relaxed=False
+[32/500] start id=gpt4_8c8961ae
+[32/500] done id=gpt4_8c8961ae latency_s=0.53 ok strict=False relaxed=False
+[33/500] start id=gpt4_d9af6064
+[33/500] done id=gpt4_d9af6064 latency_s=0.61 ok strict=False relaxed=False
+[34/500] start id=gpt4_7de946e7
+[34/500] done id=gpt4_7de946e7 latency_s=0.46 ok strict=False relaxed=False
+[35/500] start id=d01c6aa8
+[35/500] done id=d01c6aa8 latency_s=0.58 ok strict=False relaxed=False
+[36/500] start id=993da5e2
+[36/500] done id=993da5e2 latency_s=0.62 ok strict=False relaxed=False
+[37/500] start id=a3045048
+[37/500] done id=a3045048 latency_s=0.40 ok strict=False relaxed=True
+[38/500] start id=gpt4_d31cdae3
+[38/500] done id=gpt4_d31cdae3 latency_s=0.64 ok strict=False relaxed=True
+[39/500] start id=gpt4_cd90e484
+[39/500] done id=gpt4_cd90e484 latency_s=0.61 ok strict=False relaxed=False
+[40/500] start id=gpt4_88806d6e
+[40/500] done id=gpt4_88806d6e latency_s=0.44 ok strict=False relaxed=False
+[41/500] start id=gpt4_4cd9eba1
+[41/500] done id=gpt4_4cd9eba1 latency_s=0.51 ok strict=False relaxed=False
+[42/500] start id=gpt4_93f6379c
+[42/500] done id=gpt4_93f6379c latency_s=0.60 ok strict=False relaxed=True
+[43/500] start id=b29f3365
+[43/500] done id=b29f3365 latency_s=0.59 ok strict=False relaxed=False
+[44/500] start id=gpt4_2f56ae70
+[44/500] done id=gpt4_2f56ae70 latency_s=0.63 ok strict=False relaxed=True
+[45/500] start id=6613b389
+[45/500] done id=6613b389 latency_s=0.59 ok strict=False relaxed=False
+[46/500] start id=gpt4_78cf46a3
+[46/500] done id=gpt4_78cf46a3 latency_s=0.50 ok strict=False relaxed=False
+[47/500] start id=gpt4_0a05b494
+[47/500] done id=gpt4_0a05b494 latency_s=0.50 ok strict=False relaxed=False
+[48/500] start id=gpt4_1a1dc16d
+[48/500] done id=gpt4_1a1dc16d latency_s=0.45 ok strict=False relaxed=True
+[49/500] start id=gpt4_2f584639
+[49/500] done id=gpt4_2f584639 latency_s=0.45 ok strict=False relaxed=False
+[50/500] start id=gpt4_213fd887
+[50/500] done id=gpt4_213fd887 latency_s=0.58 ok strict=False relaxed=False
+[51/500] start id=gpt4_5438fa52
+[51/500] done id=gpt4_5438fa52 latency_s=0.46 ok strict=False relaxed=False
+[52/500] start id=gpt4_c27434e8
+[52/500] done id=gpt4_c27434e8 latency_s=0.48 ok strict=False relaxed=False
+[53/500] start id=gpt4_fe651585
+[53/500] done id=gpt4_fe651585 latency_s=0.54 ok strict=False relaxed=False
+[54/500] start id=8c18457d
+[54/500] done id=8c18457d latency_s=0.52 ok strict=False relaxed=False
+[55/500] start id=gpt4_70e84552_abs
+[55/500] done id=gpt4_70e84552_abs latency_s=0.54 ok strict=False relaxed=False
+[56/500] start id=gpt4_93159ced_abs
+[56/500] done id=gpt4_93159ced_abs latency_s=0.62 ok strict=False relaxed=False
+[57/500] start id=982b5123_abs
+[57/500] done id=982b5123_abs latency_s=0.40 ok strict=False relaxed=False
+[58/500] start id=c8090214_abs
+[58/500] done id=c8090214_abs latency_s=0.48 ok strict=False relaxed=False
+[59/500] start id=gpt4_c27434e8_abs
+[59/500] done id=gpt4_c27434e8_abs latency_s=0.56 ok strict=False relaxed=False
+[60/500] start id=gpt4_fe651585_abs
+[60/500] done id=gpt4_fe651585_abs latency_s=0.53 ok strict=False relaxed=False
+[61/500] start id=0a995998
+[61/500] done id=0a995998 latency_s=0.57 ok strict=False relaxed=False
+[62/500] start id=6d550036
+[62/500] done id=6d550036 latency_s=0.62 ok strict=False relaxed=False
+[63/500] start id=gpt4_59c863d7
+[63/500] done id=gpt4_59c863d7 latency_s=0.65 ok strict=False relaxed=False
+[64/500] start id=b5ef892d
+[64/500] done id=b5ef892d latency_s=0.64 ok strict=False relaxed=True
+[65/500] start id=e831120c
+[65/500] done id=e831120c latency_s=0.73 ok strict=False relaxed=False
+[66/500] start id=3a704032
+[66/500] done id=3a704032 latency_s=0.56 ok strict=True relaxed=True
+[67/500] start id=gpt4_d84a3211
+[67/500] done id=gpt4_d84a3211 latency_s=0.70 ok strict=False relaxed=False
+[68/500] start id=aae3761f
+[68/500] done id=aae3761f latency_s=0.59 ok strict=False relaxed=False
+[69/500] start id=gpt4_f2262a51
+[69/500] done id=gpt4_f2262a51 latency_s=0.66 ok strict=False relaxed=False
+[70/500] start id=dd2973ad
+[70/500] done id=dd2973ad latency_s=0.48 ok strict=False relaxed=True
+[71/500] start id=c4a1ceb8
+[71/500] done id=c4a1ceb8 latency_s=0.67 ok strict=False relaxed=True
+[72/500] start id=gpt4_a56e767c
+[72/500] done id=gpt4_a56e767c latency_s=0.63 ok strict=False relaxed=False
+[73/500] start id=6cb6f249
+[73/500] done id=6cb6f249 latency_s=0.48 ok strict=False relaxed=True
+[74/500] start id=46a3abf7
+[74/500] done id=46a3abf7 latency_s=0.67 ok strict=False relaxed=False
+[75/500] start id=36b9f61e
+[75/500] done id=36b9f61e latency_s=0.63 ok strict=False relaxed=True
+[76/500] start id=28dc39ac
+[76/500] done id=28dc39ac latency_s=0.76 ok strict=False relaxed=True
+[77/500] start id=gpt4_2f8be40d
+[77/500] done id=gpt4_2f8be40d latency_s=0.60 ok strict=False relaxed=False
+[78/500] start id=2e6d26dc
+[78/500] done id=2e6d26dc latency_s=0.59 ok strict=True relaxed=True
+[79/500] start id=gpt4_15e38248
+[79/500] done id=gpt4_15e38248 latency_s=0.87 ok strict=False relaxed=False
+[80/500] start id=88432d0a
+[80/500] done id=88432d0a latency_s=0.52 ok strict=False relaxed=False
+[81/500] start id=80ec1f4f
+[81/500] done id=80ec1f4f latency_s=0.53 ok strict=False relaxed=False
+[82/500] start id=d23cf73b
+[82/500] done id=d23cf73b latency_s=0.79 ok strict=False relaxed=False
+[83/500] start id=gpt4_7fce9456
+[83/500] done id=gpt4_7fce9456 latency_s=0.69 ok strict=False relaxed=False
+[84/500] start id=d682f1a2
+[84/500] done id=d682f1a2 latency_s=0.49 ok strict=True relaxed=True
+[85/500] start id=7024f17c
+[85/500] done id=7024f17c latency_s=0.67 ok strict=False relaxed=False
+[86/500] start id=gpt4_5501fe77
+[86/500] done id=gpt4_5501fe77 latency_s=0.53 ok strict=False relaxed=True
+[87/500] start id=gpt4_2ba83207
+[87/500] done id=gpt4_2ba83207 latency_s=0.63 ok strict=False relaxed=False
+[88/500] start id=2318644b
+[88/500] done id=2318644b latency_s=0.61 ok strict=False relaxed=False
+[89/500] start id=2ce6a0f2
+[89/500] done id=2ce6a0f2 latency_s=0.54 ok strict=True relaxed=True
+[90/500] start id=gpt4_d12ceb0e
+[90/500] done id=gpt4_d12ceb0e latency_s=0.60 ok strict=False relaxed=False
+[91/500] start id=00ca467f
+[91/500] done id=00ca467f latency_s=0.56 ok strict=False relaxed=False
+[92/500] start id=b3c15d39
+[92/500] done id=b3c15d39 latency_s=0.59 ok strict=False relaxed=True
+[93/500] start id=gpt4_31ff4165
+[93/500] done id=gpt4_31ff4165 latency_s=0.91 ok strict=False relaxed=False
+[94/500] start id=eeda8a6d
+[94/500] done id=eeda8a6d latency_s=0.85 ok strict=False relaxed=False
+[95/500] start id=2788b940
+[95/500] done id=2788b940 latency_s=0.71 ok strict=True relaxed=True
+[96/500] start id=60bf93ed
+[96/500] done id=60bf93ed latency_s=0.46 ok strict=False relaxed=True
+[97/500] start id=9d25d4e0
+[97/500] done id=9d25d4e0 latency_s=0.55 ok strict=True relaxed=True
+[98/500] start id=129d1232
+[98/500] done id=129d1232 latency_s=0.70 ok strict=True relaxed=True
+[99/500] start id=60472f9c
+[99/500] done id=60472f9c latency_s=0.51 ok strict=True relaxed=True
+[100/500] start id=gpt4_194be4b3
+[100/500] done id=gpt4_194be4b3 latency_s=0.68 ok strict=False relaxed=False
+[101/500] start id=a9f6b44c
+[101/500] done id=a9f6b44c latency_s=0.40 ok strict=True relaxed=True
+[102/500] start id=d851d5ba
+[102/500] done id=d851d5ba latency_s=0.66 ok strict=True relaxed=True
+[103/500] start id=5a7937c8
+[103/500] done id=5a7937c8 latency_s=0.61 ok strict=True relaxed=True
+[104/500] start id=gpt4_ab202e7f
+[104/500] done id=gpt4_ab202e7f latency_s=0.66 ok strict=False relaxed=False
+[105/500] start id=gpt4_e05b82a6
+[105/500] done id=gpt4_e05b82a6 latency_s=1.09 ok strict=False relaxed=False
+[106/500] start id=gpt4_731e37d7
+[106/500] done id=gpt4_731e37d7 latency_s=0.65 ok strict=True relaxed=True
+[107/500] start id=edced276
+[107/500] done id=edced276 latency_s=0.53 ok strict=False relaxed=True
+[108/500] start id=10d9b85a
+[108/500] done id=10d9b85a latency_s=0.44 ok strict=False relaxed=True
+[109/500] start id=e3038f8c
+[109/500] done id=e3038f8c latency_s=0.66 ok strict=False relaxed=False
+[110/500] start id=2b8f3739
+[110/500] done id=2b8f3739 latency_s=0.61 ok strict=False relaxed=False
+[111/500] start id=1a8a66a6
+[111/500] done id=1a8a66a6 latency_s=0.66 ok strict=False relaxed=False
+[112/500] start id=c2ac3c61
+[112/500] done id=c2ac3c61 latency_s=0.62 ok strict=False relaxed=False
+[113/500] start id=bf659f65
+[113/500] done id=bf659f65 latency_s=0.57 ok strict=False relaxed=False
+[114/500] start id=gpt4_372c3eed
+[114/500] done id=gpt4_372c3eed latency_s=0.70 ok strict=False relaxed=False
+[115/500] start id=gpt4_2f91af09
+[115/500] done id=gpt4_2f91af09 latency_s=0.61 ok strict=True relaxed=True
+[116/500] start id=81507db6
+[116/500] done id=81507db6 latency_s=0.69 ok strict=False relaxed=False
+[117/500] start id=88432d0a_abs
+[117/500] done id=88432d0a_abs latency_s=0.58 ok strict=False relaxed=False
+[118/500] start id=80ec1f4f_abs
+[118/500] done id=80ec1f4f_abs latency_s=0.52 ok strict=False relaxed=False
+[119/500] start id=eeda8a6d_abs
+[119/500] done id=eeda8a6d_abs latency_s=0.62 ok strict=False relaxed=False
+[120/500] start id=60bf93ed_abs
+[120/500] done id=60bf93ed_abs latency_s=0.43 ok strict=False relaxed=False
+[121/500] start id=edced276_abs
+[121/500] done id=edced276_abs latency_s=0.67 ok strict=False relaxed=False
+[122/500] start id=gpt4_372c3eed_abs
+[122/500] done id=gpt4_372c3eed_abs latency_s=1.08 ok strict=False relaxed=False
+[123/500] start id=6a1eabeb
+[123/500] done id=6a1eabeb latency_s=0.59 ok strict=False relaxed=False
+[124/500] start id=6aeb4375
+[124/500] done id=6aeb4375 latency_s=0.47 ok strict=False relaxed=True
+[125/500] start id=830ce83f
+[125/500] done id=830ce83f latency_s=0.41 ok strict=False relaxed=False
+[126/500] start id=852ce960
+[126/500] done id=852ce960 latency_s=0.64 ok strict=False relaxed=False
+[127/500] start id=945e3d21
+[127/500] done id=945e3d21 latency_s=0.56 ok strict=True relaxed=True
+[128/500] start id=d7c942c3
+[128/500] done id=d7c942c3 latency_s=0.66 ok strict=False relaxed=False
+[129/500] start id=71315a70
+[129/500] done id=71315a70 latency_s=0.53 ok strict=False relaxed=True
+[130/500] start id=89941a93
+[130/500] done id=89941a93 latency_s=0.47 ok strict=False relaxed=False
+[131/500] start id=ce6d2d27
+[131/500] done id=ce6d2d27 latency_s=0.41 ok strict=False relaxed=False
+[132/500] start id=9ea5eabc
+[132/500] done id=9ea5eabc latency_s=0.44 ok strict=False relaxed=False
+[133/500] start id=07741c44
+[133/500] done id=07741c44 latency_s=0.52 ok strict=False relaxed=True
+[134/500] start id=a1eacc2a
+[134/500] done id=a1eacc2a latency_s=0.54 ok strict=False relaxed=False
+[135/500] start id=184da446
+[135/500] done id=184da446 latency_s=0.53 ok strict=False relaxed=False
+[136/500] start id=031748ae
+[136/500] done id=031748ae latency_s=0.56 ok strict=False relaxed=False
+[137/500] start id=4d6b87c8
+[137/500] done id=4d6b87c8 latency_s=0.50 ok strict=True relaxed=True
+[138/500] start id=0f05491a
+[138/500] done id=0f05491a latency_s=0.49 ok strict=False relaxed=False
+[139/500] start id=08e075c7
+[139/500] done id=08e075c7 latency_s=0.47 ok strict=False relaxed=True
+[140/500] start id=f9e8c073
+[140/500] done id=f9e8c073 latency_s=0.43 ok strict=False relaxed=True
+[141/500] start id=41698283
+[141/500] done id=41698283 latency_s=0.47 ok strict=False relaxed=False
+[142/500] start id=2698e78f
+[142/500] done id=2698e78f latency_s=0.48 ok strict=False relaxed=True
+[143/500] start id=b6019101
+[143/500] done id=b6019101 latency_s=0.44 ok strict=True relaxed=True
+[144/500] start id=45dc21b6
+[144/500] done id=45dc21b6 latency_s=0.53 ok strict=True relaxed=True
+[145/500] start id=5a4f22c0
+[145/500] done id=5a4f22c0 latency_s=0.54 ok strict=False relaxed=False
+[146/500] start id=6071bd76
+[146/500] done id=6071bd76 latency_s=0.39 ok strict=False relaxed=False
+[147/500] start id=e493bb7c
+[147/500] done id=e493bb7c latency_s=0.50 ok strict=False relaxed=False
+[148/500] start id=618f13b2
+[148/500] done id=618f13b2 latency_s=0.67 ok strict=False relaxed=True
+[149/500] start id=72e3ee87
+[149/500] done id=72e3ee87 latency_s=0.46 ok strict=False relaxed=False
+[150/500] start id=c4ea545c
+[150/500] done id=c4ea545c latency_s=0.71 ok strict=False relaxed=False
+[151/500] start id=01493427
+[151/500] done id=01493427 latency_s=0.51 ok strict=True relaxed=True
+[152/500] start id=6a27ffc2
+[152/500] done id=6a27ffc2 latency_s=0.64 ok strict=False relaxed=False
+[153/500] start id=2133c1b5
+[153/500] done id=2133c1b5 latency_s=0.54 ok strict=False relaxed=False
+[154/500] start id=18bc8abd
+[154/500] done id=18bc8abd latency_s=0.57 ok strict=False relaxed=False
+[155/500] start id=db467c8c
+[155/500] done id=db467c8c latency_s=0.61 ok strict=False relaxed=False
+[156/500] start id=7a87bd0c
+[156/500] done id=7a87bd0c latency_s=0.58 ok strict=False relaxed=True
+[157/500] start id=e61a7584
+[157/500] done id=e61a7584 latency_s=0.46 ok strict=False relaxed=False
+[158/500] start id=1cea1afa
+[158/500] done id=1cea1afa latency_s=0.51 ok strict=False relaxed=False
+[159/500] start id=ed4ddc30
+[159/500] done id=ed4ddc30 latency_s=0.50 ok strict=False relaxed=False
+[160/500] start id=8fb83627
+[160/500] done id=8fb83627 latency_s=0.53 ok strict=False relaxed=False
+[161/500] start id=b01defab
+[161/500] done id=b01defab latency_s=0.53 ok strict=True relaxed=True
+[162/500] start id=22d2cb42
+[162/500] done id=22d2cb42 latency_s=0.61 ok strict=False relaxed=False
+[163/500] start id=0e4e4c46
+[163/500] done id=0e4e4c46 latency_s=0.62 ok strict=True relaxed=True
+[164/500] start id=4b24c848
+[164/500] done id=4b24c848 latency_s=0.48 ok strict=False relaxed=True
+[165/500] start id=7e974930
+[165/500] done id=7e974930 latency_s=0.52 ok strict=True relaxed=True
+[166/500] start id=603deb26
+[166/500] done id=603deb26 latency_s=0.56 ok strict=False relaxed=False
+[167/500] start id=59524333
+[167/500] done id=59524333 latency_s=0.70 ok strict=False relaxed=False
+[168/500] start id=5831f84d
+[168/500] done id=5831f84d latency_s=0.61 ok strict=True relaxed=True
+[169/500] start id=eace081b
+[169/500] done id=eace081b latency_s=0.62 ok strict=False relaxed=False
+[170/500] start id=affe2881
+[170/500] done id=affe2881 latency_s=0.56 ok strict=True relaxed=True
+[171/500] start id=50635ada
+[171/500] done id=50635ada latency_s=0.51 ok strict=False relaxed=True
+[172/500] start id=e66b632c
+[172/500] done id=e66b632c latency_s=0.51 ok strict=False relaxed=False
+[173/500] start id=0ddfec37
+[173/500] done id=0ddfec37 latency_s=0.50 ok strict=True relaxed=True
+[174/500] start id=f685340e
+[174/500] done id=f685340e latency_s=0.62 ok strict=False relaxed=False
+[175/500] start id=cc5ded98
+[175/500] done id=cc5ded98 latency_s=0.54 ok strict=False relaxed=False
+[176/500] start id=dfde3500
+[176/500] done id=dfde3500 latency_s=0.48 ok strict=False relaxed=True
+[177/500] start id=69fee5aa
+[177/500] done id=69fee5aa latency_s=0.50 ok strict=False relaxed=False
+[178/500] start id=7401057b
+[178/500] done id=7401057b latency_s=0.56 ok strict=False relaxed=False
+[179/500] start id=cf22b7bf
+[179/500] done id=cf22b7bf latency_s=0.73 ok strict=False relaxed=False
+[180/500] start id=a2f3aa27
+[180/500] done id=a2f3aa27 latency_s=0.86 ok strict=False relaxed=False
+[181/500] start id=c7dc5443
+[181/500] done id=c7dc5443 latency_s=0.64 ok strict=False relaxed=False
+[182/500] start id=06db6396
+[182/500] done id=06db6396 latency_s=0.52 ok strict=True relaxed=True
+[183/500] start id=3ba21379
+[183/500] done id=3ba21379 latency_s=0.70 ok strict=False relaxed=True
+[184/500] start id=9bbe84a2
+[184/500] done id=9bbe84a2 latency_s=0.45 ok strict=False relaxed=True
+[185/500] start id=10e09553
+[185/500] done id=10e09553 latency_s=0.47 ok strict=True relaxed=True
+[186/500] start id=dad224aa
+[186/500] done id=dad224aa latency_s=0.56 ok strict=False relaxed=False
+[187/500] start id=ba61f0b9
+[187/500] done id=ba61f0b9 latency_s=0.52 ok strict=True relaxed=True
+[188/500] start id=42ec0761
+[188/500] done id=42ec0761 latency_s=0.48 ok strict=False relaxed=False
+[189/500] start id=5c40ec5b
+[189/500] done id=5c40ec5b latency_s=0.57 ok strict=False relaxed=False
+[190/500] start id=c6853660
+[190/500] done id=c6853660 latency_s=0.52 ok strict=False relaxed=False
+[191/500] start id=26bdc477
+[191/500] done id=26bdc477 latency_s=0.52 ok strict=False relaxed=False
+[192/500] start id=0977f2af
+[192/500] done id=0977f2af latency_s=0.54 ok strict=False relaxed=False
+[193/500] start id=6aeb4375_abs
+[193/500] done id=6aeb4375_abs latency_s=0.50 ok strict=False relaxed=False
+[194/500] start id=031748ae_abs
+[194/500] done id=031748ae_abs latency_s=0.63 ok strict=False relaxed=False
+[195/500] start id=2698e78f_abs
+[195/500] done id=2698e78f_abs latency_s=0.50 ok strict=False relaxed=False
+[196/500] start id=2133c1b5_abs
+[196/500] done id=2133c1b5_abs latency_s=0.60 ok strict=False relaxed=False
+[197/500] start id=0ddfec37_abs
+[197/500] done id=0ddfec37_abs latency_s=0.48 ok strict=False relaxed=False
+[198/500] start id=f685340e_abs
+[198/500] done id=f685340e_abs latency_s=0.49 ok strict=False relaxed=False
+[199/500] start id=89941a94
+[199/500] done id=89941a94 latency_s=0.90 ok strict=False relaxed=False
+[200/500] start id=07741c45
+[200/500] done id=07741c45 latency_s=0.51 ok strict=False relaxed=False
+[201/500] start id=8a2466db
+[201/500] done id=8a2466db latency_s=0.89 ok strict=False relaxed=False
+[202/500] start id=06878be2
+[202/500] done id=06878be2 latency_s=2.44 ok strict=False relaxed=False
+[203/500] start id=75832dbd
+[203/500] done id=75832dbd latency_s=1.09 ok strict=False relaxed=False
+[204/500] start id=0edc2aef
+[204/500] done id=0edc2aef latency_s=0.98 ok strict=False relaxed=False
+[205/500] start id=35a27287
+[205/500] done id=35a27287 latency_s=0.86 ok strict=False relaxed=False
+[206/500] start id=32260d93
+[206/500] done id=32260d93 latency_s=0.63 ok strict=False relaxed=False
+[207/500] start id=195a1a1b
+[207/500] done id=195a1a1b latency_s=0.68 ok strict=False relaxed=False
+[208/500] start id=afdc33df
+[208/500] done id=afdc33df latency_s=1.20 ok strict=False relaxed=False
+[209/500] start id=caf03d32
+[209/500] done id=caf03d32 latency_s=0.67 ok strict=False relaxed=False
+[210/500] start id=54026fce
+[210/500] done id=54026fce latency_s=0.67 ok strict=False relaxed=False
+[211/500] start id=06f04340
+[211/500] done id=06f04340 latency_s=0.64 ok strict=False relaxed=False
+[212/500] start id=6b7dfb22
+[212/500] done id=6b7dfb22 latency_s=0.61 ok strict=False relaxed=False
+[213/500] start id=1a1907b4
+[213/500] done id=1a1907b4 latency_s=0.64 ok strict=False relaxed=False
+[214/500] start id=09d032c9
+[214/500] done id=09d032c9 latency_s=0.77 ok strict=False relaxed=False
+[215/500] start id=38146c39
+[215/500] done id=38146c39 latency_s=0.74 ok strict=False relaxed=False
+[216/500] start id=d24813b1
+[216/500] done id=d24813b1 latency_s=0.82 ok strict=False relaxed=False
+[217/500] start id=57f827a0
+[217/500] done id=57f827a0 latency_s=1.08 ok strict=False relaxed=False
+[218/500] start id=95228167
+[218/500] done id=95228167 latency_s=0.93 ok strict=False relaxed=False
+[219/500] start id=505af2f5
+[219/500] done id=505af2f5 latency_s=0.71 ok strict=False relaxed=False
+[220/500] start id=75f70248
+[220/500] done id=75f70248 latency_s=0.65 ok strict=False relaxed=False
+[221/500] start id=d6233ab6
+[221/500] done id=d6233ab6 latency_s=0.55 ok strict=False relaxed=False
+[222/500] start id=1da05512
+[222/500] done id=1da05512 latency_s=0.68 ok strict=False relaxed=False
+[223/500] start id=fca70973
+[223/500] done id=fca70973 latency_s=0.79 ok strict=False relaxed=False
+[224/500] start id=b6025781
+[224/500] done id=b6025781 latency_s=0.84 ok strict=False relaxed=False
+[225/500] start id=a89d7624
+[225/500] done id=a89d7624 latency_s=1.10 ok strict=False relaxed=False
+[226/500] start id=b0479f84
+[226/500] done id=b0479f84 latency_s=0.71 ok strict=False relaxed=False
+[227/500] start id=1d4e3b97
+[227/500] done id=1d4e3b97 latency_s=0.62 ok strict=False relaxed=False
+[228/500] start id=07b6f563
+[228/500] done id=07b6f563 latency_s=0.66 ok strict=False relaxed=False
+[229/500] start id=1c0ddc50
+[229/500] done id=1c0ddc50 latency_s=0.68 ok strict=False relaxed=False
+[230/500] start id=0a34ad58
+[230/500] done id=0a34ad58 latency_s=0.69 ok strict=False relaxed=False
+[231/500] start id=7161e7e2
+[231/500] done id=7161e7e2 latency_s=0.48 ok strict=False relaxed=False
+[232/500] start id=c4f10528
+[232/500] done id=c4f10528 latency_s=0.39 ok strict=False relaxed=True
+[233/500] start id=89527b6b
+[233/500] done id=89527b6b latency_s=0.45 ok strict=False relaxed=False
+[234/500] start id=e9327a54
+[234/500] done id=e9327a54 latency_s=0.53 ok strict=False relaxed=False
+[235/500] start id=4c36ccef
+[235/500] done id=4c36ccef latency_s=0.48 ok strict=False relaxed=True
+[236/500] start id=6ae235be
+[236/500] done id=6ae235be latency_s=0.62 ok strict=False relaxed=False
+[237/500] start id=7e00a6cb
+[237/500] done id=7e00a6cb latency_s=0.47 ok strict=False relaxed=True
+[238/500] start id=1903aded
+[238/500] done id=1903aded latency_s=0.39 ok strict=False relaxed=True
+[239/500] start id=ceb54acb
+[239/500] done id=ceb54acb latency_s=0.45 ok strict=False relaxed=False
+[240/500] start id=f523d9fe
+[240/500] done id=f523d9fe latency_s=0.45 ok strict=False relaxed=False
+[241/500] start id=0e5e2d1a
+[241/500] done id=0e5e2d1a latency_s=0.42 ok strict=False relaxed=True
+[242/500] start id=fea54f57
+[242/500] done id=fea54f57 latency_s=0.65 ok strict=False relaxed=False
+[243/500] start id=cc539528
+[243/500] done id=cc539528 latency_s=0.47 ok strict=False relaxed=False
+[244/500] start id=dc439ea3
+[244/500] done id=dc439ea3 latency_s=0.48 ok strict=False relaxed=True
+[245/500] start id=18dcd5a5
+[245/500] done id=18dcd5a5 latency_s=0.45 ok strict=False relaxed=False
+[246/500] start id=488d3006
+[246/500] done id=488d3006 latency_s=0.37 ok strict=False relaxed=False
+[247/500] start id=58470ed2
+[247/500] done id=58470ed2 latency_s=0.56 ok strict=False relaxed=False
+[248/500] start id=8cf51dda
+[248/500] done id=8cf51dda latency_s=0.76 ok strict=False relaxed=False
+[249/500] start id=1d4da289
+[249/500] done id=1d4da289 latency_s=0.51 ok strict=False relaxed=False
+[250/500] start id=8464fc84
+[250/500] done id=8464fc84 latency_s=0.46 ok strict=False relaxed=False
+[251/500] start id=8aef76bc
+[251/500] done id=8aef76bc latency_s=0.54 ok strict=False relaxed=True
+[252/500] start id=71a3fd6b
+[252/500] done id=71a3fd6b latency_s=0.55 ok strict=True relaxed=True
+[253/500] start id=2bf43736
+[253/500] done id=2bf43736 latency_s=0.72 ok strict=False relaxed=True
+[254/500] start id=70b3e69b
+[254/500] done id=70b3e69b latency_s=0.53 ok strict=False relaxed=False
+[255/500] start id=8752c811
+[255/500] done id=8752c811 latency_s=0.61 ok strict=False relaxed=False
+[256/500] start id=3249768e
+[256/500] done id=3249768e latency_s=0.37 ok strict=False relaxed=True
+[257/500] start id=1b9b7252
+[257/500] done id=1b9b7252 latency_s=0.37 ok strict=True relaxed=True
+[258/500] start id=1568498a
+[258/500] done id=1568498a latency_s=0.51 ok strict=False relaxed=False
+[259/500] start id=6222b6eb
+[259/500] done id=6222b6eb latency_s=0.55 ok strict=False relaxed=False
+[260/500] start id=e8a79c70
+[260/500] done id=e8a79c70 latency_s=0.37 ok strict=False relaxed=True
+[261/500] start id=d596882b
+[261/500] done id=d596882b latency_s=0.34 ok strict=False relaxed=True
+[262/500] start id=e3fc4d6e
+[262/500] done id=e3fc4d6e latency_s=0.40 ok strict=False relaxed=True
+[263/500] start id=51b23612
+[263/500] done id=51b23612 latency_s=0.51 ok strict=False relaxed=False
+[264/500] start id=3e321797
+[264/500] done id=3e321797 latency_s=0.57 ok strict=False relaxed=False
+[265/500] start id=e982271f
+[265/500] done id=e982271f latency_s=0.39 ok strict=True relaxed=True
+[266/500] start id=352ab8bd
+[266/500] done id=352ab8bd latency_s=0.48 ok strict=False relaxed=False
+[267/500] start id=fca762bc
+[267/500] done id=fca762bc latency_s=0.40 ok strict=False relaxed=True
+[268/500] start id=7a8d0b71
+[268/500] done id=7a8d0b71 latency_s=0.43 ok strict=True relaxed=True
+[269/500] start id=a40e080f
+[269/500] done id=a40e080f latency_s=0.41 ok strict=True relaxed=True
+[270/500] start id=8b9d4367
+[270/500] done id=8b9d4367 latency_s=0.34 ok strict=False relaxed=True
+[271/500] start id=5809eb10
+[271/500] done id=5809eb10 latency_s=0.48 ok strict=False relaxed=False
+[272/500] start id=41275add
+[272/500] done id=41275add latency_s=0.58 ok strict=False relaxed=False
+[273/500] start id=4388e9dd
+[273/500] done id=4388e9dd latency_s=0.49 ok strict=False relaxed=False
+[274/500] start id=4baee567
+[274/500] done id=4baee567 latency_s=0.51 ok strict=True relaxed=True
+[275/500] start id=561fabcd
+[275/500] done id=561fabcd latency_s=0.39 ok strict=False relaxed=True
+[276/500] start id=b759caee
+[276/500] done id=b759caee latency_s=0.48 ok strict=False relaxed=True
+[277/500] start id=ac031881
+[277/500] done id=ac031881 latency_s=0.50 ok strict=False relaxed=False
+[278/500] start id=28bcfaac
+[278/500] done id=28bcfaac latency_s=0.48 ok strict=False relaxed=False
+[279/500] start id=16c90bf4
+[279/500] done id=16c90bf4 latency_s=0.56 ok strict=False relaxed=False
+[280/500] start id=c8f1aeed
+[280/500] done id=c8f1aeed latency_s=0.34 ok strict=False relaxed=True
+[281/500] start id=eaca4986
+[281/500] done id=eaca4986 latency_s=0.40 ok strict=True relaxed=True
+[282/500] start id=c7cf7dfd
+[282/500] done id=c7cf7dfd latency_s=0.48 ok strict=False relaxed=True
+[283/500] start id=e48988bc
+[283/500] done id=e48988bc latency_s=0.53 ok strict=False relaxed=False
+[284/500] start id=1de5cff2
+[284/500] done id=1de5cff2 latency_s=0.47 ok strict=False relaxed=True
+[285/500] start id=65240037
+[285/500] done id=65240037 latency_s=0.51 ok strict=False relaxed=False
+[286/500] start id=778164c6
+[286/500] done id=778164c6 latency_s=0.37 ok strict=False relaxed=True
+[287/500] start id=e47becba
+[287/500] done id=e47becba latency_s=0.50 ok strict=False relaxed=True
+[288/500] start id=118b2229
+[288/500] done id=118b2229 latency_s=0.48 ok strict=False relaxed=False
+[289/500] start id=51a45a95
+[289/500] done id=51a45a95 latency_s=0.43 ok strict=False relaxed=False
+[290/500] start id=58bf7951
+[290/500] done id=58bf7951 latency_s=0.46 ok strict=True relaxed=True
+[291/500] start id=1e043500
+[291/500] done id=1e043500 latency_s=0.51 ok strict=True relaxed=True
+[292/500] start id=c5e8278d
+[292/500] done id=c5e8278d latency_s=0.42 ok strict=True relaxed=True
+[293/500] start id=6ade9755
+[293/500] done id=6ade9755 latency_s=0.59 ok strict=False relaxed=False
+[294/500] start id=6f9b354f
+[294/500] done id=6f9b354f latency_s=0.54 ok strict=False relaxed=True
+[295/500] start id=58ef2f1c
+[295/500] done id=58ef2f1c latency_s=0.47 ok strict=False relaxed=False
+[296/500] start id=f8c5f88b
+[296/500] done id=f8c5f88b latency_s=0.56 ok strict=False relaxed=False
+[297/500] start id=5d3d2817
+[297/500] done id=5d3d2817 latency_s=0.44 ok strict=False relaxed=True
+[298/500] start id=7527f7e2
+[298/500] done id=7527f7e2 latency_s=0.50 ok strict=True relaxed=True
+[299/500] start id=c960da58
+[299/500] done id=c960da58 latency_s=0.43 ok strict=True relaxed=True
+[300/500] start id=3b6f954b
+[300/500] done id=3b6f954b latency_s=0.53 ok strict=False relaxed=False
+[301/500] start id=726462e0
+[301/500] done id=726462e0 latency_s=0.50 ok strict=False relaxed=False
+[302/500] start id=94f70d80
+[302/500] done id=94f70d80 latency_s=0.51 ok strict=False relaxed=True
+[303/500] start id=66f24dbb
+[303/500] done id=66f24dbb latency_s=0.43 ok strict=False relaxed=False
+[304/500] start id=ad7109d1
+[304/500] done id=ad7109d1 latency_s=0.52 ok strict=True relaxed=True
+[305/500] start id=af8d2e46
+[305/500] done id=af8d2e46 latency_s=0.59 ok strict=False relaxed=False
+[306/500] start id=dccbc061
+[306/500] done id=dccbc061 latency_s=0.50 ok strict=False relaxed=False
+[307/500] start id=c8c3f81d
+[307/500] done id=c8c3f81d latency_s=0.39 ok strict=False relaxed=True
+[308/500] start id=8ebdbe50
+[308/500] done id=8ebdbe50 latency_s=0.53 ok strict=False relaxed=False
+[309/500] start id=6b168ec8
+[309/500] done id=6b168ec8 latency_s=0.50 ok strict=False relaxed=True
+[310/500] start id=75499fd8
+[310/500] done id=75499fd8 latency_s=0.40 ok strict=False relaxed=True
+[311/500] start id=21436231
+[311/500] done id=21436231 latency_s=0.39 ok strict=True relaxed=True
+[312/500] start id=95bcc1c8
+[312/500] done id=95bcc1c8 latency_s=0.56 ok strict=True relaxed=True
+[313/500] start id=0862e8bf
+[313/500] done id=0862e8bf latency_s=0.42 ok strict=False relaxed=True
+[314/500] start id=853b0a1d
+[314/500] done id=853b0a1d latency_s=0.44 ok strict=False relaxed=False
+[315/500] start id=a06e4cfe
+[315/500] done id=a06e4cfe latency_s=0.45 ok strict=True relaxed=True
+[316/500] start id=37d43f65
+[316/500] done id=37d43f65 latency_s=0.43 ok strict=True relaxed=True
+[317/500] start id=b86304ba
+[317/500] done id=b86304ba latency_s=0.43 ok strict=False relaxed=False
+[318/500] start id=d52b4f67
+[318/500] done id=d52b4f67 latency_s=0.35 ok strict=False relaxed=True
+[319/500] start id=25e5aa4f
+[319/500] done id=25e5aa4f latency_s=0.41 ok strict=False relaxed=False
+[320/500] start id=caf9ead2
+[320/500] done id=caf9ead2 latency_s=0.43 ok strict=False relaxed=True
+[321/500] start id=8550ddae
+[321/500] done id=8550ddae latency_s=0.50 ok strict=False relaxed=True
+[322/500] start id=60d45044
+[322/500] done id=60d45044 latency_s=0.53 ok strict=False relaxed=True
+[323/500] start id=3f1e9474
+[323/500] done id=3f1e9474 latency_s=0.51 ok strict=False relaxed=True
+[324/500] start id=86b68151
+[324/500] done id=86b68151 latency_s=0.45 ok strict=False relaxed=True
+[325/500] start id=577d4d32
+[325/500] done id=577d4d32 latency_s=0.35 ok strict=False relaxed=True
+[326/500] start id=ec81a493
+[326/500] done id=ec81a493 latency_s=0.45 ok strict=True relaxed=True
+[327/500] start id=15745da0
+[327/500] done id=15745da0 latency_s=0.53 ok strict=False relaxed=False
+[328/500] start id=e01b8e2f
+[328/500] done id=e01b8e2f latency_s=0.57 ok strict=False relaxed=True
+[329/500] start id=bc8a6e93
+[329/500] done id=bc8a6e93 latency_s=0.43 ok strict=False relaxed=False
+[330/500] start id=ccb36322
+[330/500] done id=ccb36322 latency_s=0.43 ok strict=False relaxed=True
+[331/500] start id=001be529
+[331/500] done id=001be529 latency_s=0.50 ok strict=False relaxed=True
+[332/500] start id=b320f3f8
+[332/500] done id=b320f3f8 latency_s=0.57 ok strict=False relaxed=False
+[333/500] start id=19b5f2b3
+[333/500] done id=19b5f2b3 latency_s=0.47 ok strict=False relaxed=True
+[334/500] start id=4fd1909e
+[334/500] done id=4fd1909e latency_s=0.36 ok strict=False relaxed=True
+[335/500] start id=545bd2b5
+[335/500] done id=545bd2b5 latency_s=0.50 ok strict=False relaxed=False
+[336/500] start id=8a137a7f
+[336/500] done id=8a137a7f latency_s=0.52 ok strict=False relaxed=True
+[337/500] start id=76d63226
+[337/500] done id=76d63226 latency_s=0.50 ok strict=False relaxed=True
+[338/500] start id=86f00804
+[338/500] done id=86f00804 latency_s=0.44 ok strict=False relaxed=True
+[339/500] start id=8e9d538c
+[339/500] done id=8e9d538c latency_s=0.49 ok strict=True relaxed=True
+[340/500] start id=311778f1
+[340/500] done id=311778f1 latency_s=0.43 ok strict=False relaxed=False
+[341/500] start id=c19f7a0b
+[341/500] done id=c19f7a0b latency_s=0.51 ok strict=False relaxed=False
+[342/500] start id=4100d0a0
+[342/500] done id=4100d0a0 latency_s=0.52 ok strict=False relaxed=False
+[343/500] start id=29f2956b
+[343/500] done id=29f2956b latency_s=0.50 ok strict=False relaxed=False
+[344/500] start id=1faac195
+[344/500] done id=1faac195 latency_s=0.50 ok strict=False relaxed=False
+[345/500] start id=faba32e5
+[345/500] done id=faba32e5 latency_s=0.49 ok strict=False relaxed=True
+[346/500] start id=f4f1d8a4
+[346/500] done id=f4f1d8a4 latency_s=0.46 ok strict=False relaxed=True
+[347/500] start id=c14c00dd
+[347/500] done id=c14c00dd latency_s=0.51 ok strict=False relaxed=False
+[348/500] start id=36580ce8
+[348/500] done id=36580ce8 latency_s=0.47 ok strict=False relaxed=True
+[349/500] start id=3d86fd0a
+[349/500] done id=3d86fd0a latency_s=0.39 ok strict=False relaxed=True
+[350/500] start id=a82c026e
+[350/500] done id=a82c026e latency_s=0.50 ok strict=True relaxed=True
+[351/500] start id=0862e8bf_abs
+[351/500] done id=0862e8bf_abs latency_s=0.40 ok strict=False relaxed=False
+[352/500] start id=15745da0_abs
+[352/500] done id=15745da0_abs latency_s=0.49 ok strict=False relaxed=False
+[353/500] start id=bc8a6e93_abs
+[353/500] done id=bc8a6e93_abs latency_s=0.51 ok strict=False relaxed=False
+[354/500] start id=19b5f2b3_abs
+[354/500] done id=19b5f2b3_abs latency_s=0.39 ok strict=False relaxed=False
+[355/500] start id=29f2956b_abs
+[355/500] done id=29f2956b_abs latency_s=0.53 ok strict=False relaxed=False
+[356/500] start id=f4f1d8a4_abs
+[356/500] done id=f4f1d8a4_abs latency_s=0.40 ok strict=False relaxed=False
+[357/500] start id=gpt4_59149c77
+[357/500] done id=gpt4_59149c77 latency_s=0.55 ok strict=False relaxed=True
+[358/500] start id=gpt4_f49edff3
+[358/500] done id=gpt4_f49edff3 latency_s=0.79 ok strict=False relaxed=False
+[359/500] start id=71017276
+[359/500] done id=71017276 latency_s=0.53 ok strict=False relaxed=False
+[360/500] start id=b46e15ed
+[360/500] done id=b46e15ed latency_s=0.69 ok strict=False relaxed=False
+[361/500] start id=gpt4_fa19884c
+[361/500] done id=gpt4_fa19884c latency_s=0.54 ok strict=False relaxed=True
+[362/500] start id=0bc8ad92
+[362/500] done id=0bc8ad92 latency_s=0.55 ok strict=False relaxed=False
+[363/500] start id=af082822
+[363/500] done id=af082822 latency_s=0.43 ok strict=False relaxed=False
+[364/500] start id=gpt4_4929293a
+[364/500] done id=gpt4_4929293a latency_s=0.58 ok strict=False relaxed=True
+[365/500] start id=gpt4_b5700ca9
+[365/500] done id=gpt4_b5700ca9 latency_s=0.42 ok strict=False relaxed=False
+[366/500] start id=9a707b81
+[366/500] done id=9a707b81 latency_s=0.61 ok strict=False relaxed=False
+[367/500] start id=gpt4_1d4ab0c9
+[367/500] done id=gpt4_1d4ab0c9 latency_s=0.50 ok strict=False relaxed=True
+[368/500] start id=gpt4_e072b769
+[368/500] done id=gpt4_e072b769 latency_s=0.36 ok strict=False relaxed=False
+[369/500] start id=0db4c65d
+[369/500] done id=0db4c65d latency_s=0.59 ok strict=False relaxed=True
+[370/500] start id=gpt4_1d80365e
+[370/500] done id=gpt4_1d80365e latency_s=0.53 ok strict=False relaxed=True
+[371/500] start id=gpt4_7f6b06db
+[371/500] done id=gpt4_7f6b06db latency_s=0.93 ok strict=False relaxed=False
+[372/500] start id=gpt4_6dc9b45b
+[372/500] done id=gpt4_6dc9b45b latency_s=0.65 ok strict=False relaxed=True
+[373/500] start id=gpt4_8279ba02
+[373/500] done id=gpt4_8279ba02 latency_s=0.49 ok strict=False relaxed=True
+[374/500] start id=gpt4_18c2b244
+[374/500] done id=gpt4_18c2b244 latency_s=1.15 ok strict=False relaxed=False
+[375/500] start id=gpt4_a1b77f9c
+[375/500] done id=gpt4_a1b77f9c latency_s=0.83 ok strict=False relaxed=False
+[376/500] start id=gpt4_1916e0ea
+[376/500] done id=gpt4_1916e0ea latency_s=0.60 ok strict=False relaxed=True
+[377/500] start id=gpt4_7a0daae1
+[377/500] done id=gpt4_7a0daae1 latency_s=0.61 ok strict=True relaxed=True
+[378/500] start id=gpt4_468eb063
+[378/500] done id=gpt4_468eb063 latency_s=0.41 ok strict=False relaxed=True
+[379/500] start id=gpt4_7abb270c
+[379/500] done id=gpt4_7abb270c latency_s=0.90 ok strict=False relaxed=False
+[380/500] start id=gpt4_1e4a8aeb
+[380/500] done id=gpt4_1e4a8aeb latency_s=0.46 ok strict=False relaxed=True
+[381/500] start id=gpt4_4fc4f797
+[381/500] done id=gpt4_4fc4f797 latency_s=0.45 ok strict=False relaxed=False
+[382/500] start id=4dfccbf7
+[382/500] done id=4dfccbf7 latency_s=0.50 ok strict=False relaxed=False
+[383/500] start id=gpt4_61e13b3c
+[383/500] done id=gpt4_61e13b3c latency_s=0.49 ok strict=False relaxed=True
+[384/500] start id=gpt4_45189cb4
+[384/500] done id=gpt4_45189cb4 latency_s=0.75 ok strict=False relaxed=False
+[385/500] start id=2ebe6c90
+[385/500] done id=2ebe6c90 latency_s=0.44 ok strict=False relaxed=True
+[386/500] start id=gpt4_e061b84f
+[386/500] done id=gpt4_e061b84f latency_s=0.77 ok strict=False relaxed=False
+[387/500] start id=370a8ff4
+[387/500] done id=370a8ff4 latency_s=0.59 ok strict=False relaxed=False
+[388/500] start id=gpt4_d6585ce8
+[388/500] done id=gpt4_d6585ce8 latency_s=1.01 ok strict=False relaxed=False
+[389/500] start id=gpt4_4ef30696
+[389/500] done id=gpt4_4ef30696 latency_s=0.59 ok strict=False relaxed=False
+[390/500] start id=gpt4_ec93e27f
+[390/500] done id=gpt4_ec93e27f latency_s=0.43 ok strict=False relaxed=True
+[391/500] start id=6e984301
+[391/500] done id=6e984301 latency_s=0.58 ok strict=False relaxed=False
+[392/500] start id=8077ef71
+[392/500] done id=8077ef71 latency_s=0.37 ok strict=False relaxed=False
+[393/500] start id=gpt4_f420262c
+[393/500] done id=gpt4_f420262c latency_s=0.73 ok strict=False relaxed=False
+[394/500] start id=gpt4_8e165409
+[394/500] done id=gpt4_8e165409 latency_s=0.41 ok strict=False relaxed=False
+[395/500] start id=gpt4_74aed68e
+[395/500] done id=gpt4_74aed68e latency_s=0.48 ok strict=False relaxed=True
+[396/500] start id=bcbe585f
+[396/500] done id=bcbe585f latency_s=0.44 ok strict=False relaxed=False
+[397/500] start id=gpt4_21adecb5
+[397/500] done id=gpt4_21adecb5 latency_s=0.55 ok strict=False relaxed=True
+[398/500] start id=5e1b23de
+[398/500] done id=5e1b23de latency_s=0.51 ok strict=False relaxed=False
+[399/500] start id=gpt4_98f46fc6
+[399/500] done id=gpt4_98f46fc6 latency_s=0.53 ok strict=False relaxed=False
+[400/500] start id=gpt4_af6db32f
+[400/500] done id=gpt4_af6db32f latency_s=0.52 ok strict=False relaxed=True
+[401/500] start id=eac54adc
+[401/500] done id=eac54adc latency_s=0.63 ok strict=False relaxed=True
+[402/500] start id=gpt4_7ddcf75f
+[402/500] done id=gpt4_7ddcf75f latency_s=0.42 ok strict=False relaxed=True
+[403/500] start id=gpt4_a2d1d1f6
+[403/500] done id=gpt4_a2d1d1f6 latency_s=0.49 ok strict=False relaxed=True
+[404/500] start id=gpt4_85da3956
+[404/500] done id=gpt4_85da3956 latency_s=0.48 ok strict=False relaxed=True
+[405/500] start id=gpt4_b0863698
+[405/500] done id=gpt4_b0863698 latency_s=0.49 ok strict=False relaxed=True
+[406/500] start id=gpt4_68e94287
+[406/500] done id=gpt4_68e94287 latency_s=0.87 ok strict=False relaxed=False
+[407/500] start id=gpt4_e414231e
+[407/500] done id=gpt4_e414231e latency_s=0.54 ok strict=False relaxed=True
+[408/500] start id=gpt4_7ca326fa
+[408/500] done id=gpt4_7ca326fa latency_s=0.61 ok strict=False relaxed=False
+[409/500] start id=gpt4_7bc6cf22
+[409/500] done id=gpt4_7bc6cf22 latency_s=0.49 ok strict=False relaxed=True
+[410/500] start id=2ebe6c92
+[410/500] done id=2ebe6c92 latency_s=0.42 ok strict=False relaxed=False
+[411/500] start id=gpt4_e061b84g
+[411/500] done id=gpt4_e061b84g latency_s=0.55 ok strict=False relaxed=False
+[412/500] start id=71017277
+[412/500] done id=71017277 latency_s=0.45 ok strict=False relaxed=True
+[413/500] start id=b46e15ee
+[413/500] done id=b46e15ee latency_s=0.64 ok strict=False relaxed=False
+[414/500] start id=gpt4_d6585ce9
+[414/500] done id=gpt4_d6585ce9 latency_s=0.77 ok strict=False relaxed=False
+[415/500] start id=gpt4_1e4a8aec
+[415/500] done id=gpt4_1e4a8aec latency_s=0.48 ok strict=False relaxed=False
+[416/500] start id=gpt4_f420262d
+[416/500] done id=gpt4_f420262d latency_s=0.68 ok strict=False relaxed=True
+[417/500] start id=gpt4_59149c78
+[417/500] done id=gpt4_59149c78 latency_s=0.93 ok strict=False relaxed=False
+[418/500] start id=gpt4_e414231f
+[418/500] done id=gpt4_e414231f latency_s=0.58 ok strict=False relaxed=False
+[419/500] start id=gpt4_4929293b
+[419/500] done id=gpt4_4929293b latency_s=0.49 ok strict=False relaxed=False
+[420/500] start id=gpt4_468eb064
+[420/500] done id=gpt4_468eb064 latency_s=0.44 ok strict=False relaxed=False
+[421/500] start id=gpt4_fa19884d
+[421/500] done id=gpt4_fa19884d latency_s=0.51 ok strict=False relaxed=False
+[422/500] start id=9a707b82
+[422/500] done id=9a707b82 latency_s=0.87 ok strict=False relaxed=False
+[423/500] start id=eac54add
+[423/500] done id=eac54add latency_s=0.46 ok strict=False relaxed=False
+[424/500] start id=4dfccbf8
+[424/500] done id=4dfccbf8 latency_s=0.85 ok strict=False relaxed=False
+[425/500] start id=0bc8ad93
+[425/500] done id=0bc8ad93 latency_s=0.69 ok strict=False relaxed=False
+[426/500] start id=6e984302
+[426/500] done id=6e984302 latency_s=0.66 ok strict=False relaxed=False
+[427/500] start id=gpt4_8279ba03
+[427/500] done id=gpt4_8279ba03 latency_s=0.41 ok strict=False relaxed=True
+[428/500] start id=gpt4_b5700ca0
+[428/500] done id=gpt4_b5700ca0 latency_s=0.52 ok strict=False relaxed=True
+[429/500] start id=gpt4_68e94288
+[429/500] done id=gpt4_68e94288 latency_s=0.61 ok strict=False relaxed=False
+[430/500] start id=d3ab962e
+[430/500] done id=d3ab962e latency_s=0.93 ok strict=False relaxed=True
+[431/500] start id=2311e44b
+[431/500] done id=2311e44b latency_s=0.54 ok strict=False relaxed=False
+[432/500] start id=cc06de0d
+[432/500] done id=cc06de0d latency_s=0.45 ok strict=True relaxed=True
+[433/500] start id=a11281a2
+[433/500] done id=a11281a2 latency_s=0.97 ok strict=False relaxed=False
+[434/500] start id=4f54b7c9
+[434/500] done id=4f54b7c9 latency_s=0.48 ok strict=True relaxed=True
+[435/500] start id=85fa3a3f
+[435/500] done id=85fa3a3f latency_s=0.37 ok strict=False relaxed=False
+[436/500] start id=9aaed6a3
+[436/500] done id=9aaed6a3 latency_s=0.51 ok strict=True relaxed=True
+[437/500] start id=1f2b8d4f
+[437/500] done id=1f2b8d4f latency_s=0.45 ok strict=True relaxed=True
+[438/500] start id=e6041065
+[438/500] done id=e6041065 latency_s=0.51 ok strict=False relaxed=True
+[439/500] start id=51c32626
+[439/500] done id=51c32626 latency_s=0.54 ok strict=False relaxed=False
+[440/500] start id=d905b33f
+[440/500] done id=d905b33f latency_s=0.56 ok strict=True relaxed=True
+[441/500] start id=7405e8b1
+[441/500] done id=7405e8b1 latency_s=0.54 ok strict=True relaxed=True
+[442/500] start id=f35224e0
+[442/500] done id=f35224e0 latency_s=0.54 ok strict=True relaxed=True
+[443/500] start id=6456829e
+[443/500] done id=6456829e latency_s=0.59 ok strict=False relaxed=False
+[444/500] start id=a4996e51
+[444/500] done id=a4996e51 latency_s=0.62 ok strict=False relaxed=False
+[445/500] start id=3c1045c8
+[445/500] done id=3c1045c8 latency_s=0.56 ok strict=False relaxed=False
+[446/500] start id=60036106
+[446/500] done id=60036106 latency_s=0.62 ok strict=False relaxed=False
+[447/500] start id=681a1674
+[447/500] done id=681a1674 latency_s=0.43 ok strict=True relaxed=True
+[448/500] start id=e25c3b8d
+[448/500] done id=e25c3b8d latency_s=0.56 ok strict=True relaxed=True
+[449/500] start id=4adc0475
+[449/500] done id=4adc0475 latency_s=0.59 ok strict=False relaxed=False
+[450/500] start id=4bc144e2
+[450/500] done id=4bc144e2 latency_s=0.48 ok strict=True relaxed=True
+[451/500] start id=ef66a6e5
+[451/500] done id=ef66a6e5 latency_s=0.45 ok strict=False relaxed=False
+[452/500] start id=5025383b
+[452/500] done id=5025383b latency_s=0.51 ok strict=False relaxed=False
+[453/500] start id=a1cc6108
+[453/500] done id=a1cc6108 latency_s=0.54 ok strict=False relaxed=False
+[454/500] start id=9ee3ecd6
+[454/500] done id=9ee3ecd6 latency_s=0.49 ok strict=False relaxed=False
+[455/500] start id=3fdac837
+[455/500] done id=3fdac837 latency_s=0.50 ok strict=False relaxed=False
+[456/500] start id=91b15a6e
+[456/500] done id=91b15a6e latency_s=0.51 ok strict=True relaxed=True
+[457/500] start id=27016adc
+[457/500] done id=27016adc latency_s=0.54 ok strict=True relaxed=True
+[458/500] start id=720133ac
+[458/500] done id=720133ac latency_s=0.57 ok strict=False relaxed=True
+[459/500] start id=77eafa52
+[459/500] done id=77eafa52 latency_s=0.50 ok strict=True relaxed=True
+[460/500] start id=8979f9ec
+[460/500] done id=8979f9ec latency_s=0.43 ok strict=False relaxed=False
+[461/500] start id=0100672e
+[461/500] done id=0100672e latency_s=0.55 ok strict=False relaxed=False
+[462/500] start id=a96c20ee
+[462/500] done id=a96c20ee latency_s=0.57 ok strict=False relaxed=True
+[463/500] start id=92a0aa75
+[463/500] done id=92a0aa75 latency_s=0.48 ok strict=False relaxed=False
+[464/500] start id=3fe836c9
+[464/500] done id=3fe836c9 latency_s=0.52 ok strict=True relaxed=True
+[465/500] start id=1c549ce4
+[465/500] done id=1c549ce4 latency_s=0.61 ok strict=True relaxed=True
+[466/500] start id=6c49646a
+[466/500] done id=6c49646a latency_s=0.48 ok strict=False relaxed=True
+[467/500] start id=1192316e
+[467/500] done id=1192316e latency_s=0.59 ok strict=False relaxed=False
+[468/500] start id=0ea62687
+[468/500] done id=0ea62687 latency_s=0.51 ok strict=False relaxed=False
+[469/500] start id=67e0d0f2
+[469/500] done id=67e0d0f2 latency_s=0.58 ok strict=False relaxed=False
+[470/500] start id=bb7c3b45
+[470/500] done id=bb7c3b45 latency_s=0.46 ok strict=True relaxed=True
+[471/500] start id=ba358f49
+[471/500] done id=ba358f49 latency_s=0.54 ok strict=True relaxed=True
+[472/500] start id=61f8c8f8
+[472/500] done id=61f8c8f8 latency_s=0.59 ok strict=False relaxed=True
+[473/500] start id=60159905
+[473/500] done id=60159905 latency_s=0.51 ok strict=False relaxed=False
+[474/500] start id=ef9cf60a
+[474/500] done id=ef9cf60a latency_s=0.75 ok strict=False relaxed=False
+[475/500] start id=73d42213
+[475/500] done id=73d42213 latency_s=0.53 ok strict=False relaxed=False
+[476/500] start id=bc149d6b
+[476/500] done id=bc149d6b latency_s=0.42 ok strict=False relaxed=True
+[477/500] start id=099778bb
+[477/500] done id=099778bb latency_s=0.48 ok strict=False relaxed=True
+[478/500] start id=09ba9854
+[478/500] done id=09ba9854 latency_s=0.65 ok strict=False relaxed=False
+[479/500] start id=d6062bb9
+[479/500] done id=d6062bb9 latency_s=0.45 ok strict=False relaxed=False
+[480/500] start id=157a136e
+[480/500] done id=157a136e latency_s=0.62 ok strict=False relaxed=False
+[481/500] start id=c18a7dc8
+[481/500] done id=c18a7dc8 latency_s=0.48 ok strict=False relaxed=False
+[482/500] start id=a3332713
+[482/500] done id=a3332713 latency_s=0.39 ok strict=True relaxed=True
+[483/500] start id=55241a1f
+[483/500] done id=55241a1f latency_s=0.52 ok strict=True relaxed=True
+[484/500] start id=a08a253f
+[484/500] done id=a08a253f latency_s=0.46 ok strict=False relaxed=False
+[485/500] start id=f0e564bc
+[485/500] done id=f0e564bc latency_s=0.50 ok strict=False relaxed=True
+[486/500] start id=078150f1
+[486/500] done id=078150f1 latency_s=0.56 ok strict=False relaxed=False
+[487/500] start id=8cf4d046
+[487/500] done id=8cf4d046 latency_s=0.61 ok strict=False relaxed=False
+[488/500] start id=a346bb18
+[488/500] done id=a346bb18 latency_s=0.51 ok strict=False relaxed=False
+[489/500] start id=37f165cf
+[489/500] done id=37f165cf latency_s=0.51 ok strict=False relaxed=False
+[490/500] start id=8e91e7d9
+[490/500] done id=8e91e7d9 latency_s=0.53 ok strict=True relaxed=True
+[491/500] start id=87f22b4a
+[491/500] done id=87f22b4a latency_s=0.56 ok strict=True relaxed=True
+[492/500] start id=e56a43b9
+[492/500] done id=e56a43b9 latency_s=0.59 ok strict=False relaxed=False
+[493/500] start id=efc3f7c2
+[493/500] done id=efc3f7c2 latency_s=0.57 ok strict=False relaxed=False
+[494/500] start id=21d02d0d
+[494/500] done id=21d02d0d latency_s=0.53 ok strict=False relaxed=True
+[495/500] start id=2311e44b_abs
+[495/500] done id=2311e44b_abs latency_s=0.68 ok strict=False relaxed=False
+[496/500] start id=6456829e_abs
+[496/500] done id=6456829e_abs latency_s=0.67 ok strict=False relaxed=False
+[497/500] start id=e5ba910e_abs
+[497/500] done id=e5ba910e_abs latency_s=0.48 ok strict=False relaxed=False
+[498/500] start id=a96c20ee_abs
+[498/500] done id=a96c20ee_abs latency_s=0.48 ok strict=False relaxed=False
+[499/500] start id=ba358f49_abs
+[499/500] done id=ba358f49_abs latency_s=0.53 ok strict=False relaxed=False
+[500/500] start id=09ba9854_abs
+[500/500] done id=09ba9854_abs latency_s=0.65 ok strict=False relaxed=False
+Wrote results/longmemeval_cleaned_baseline_context/predictions.jsonl
+Wrote results/longmemeval_cleaned_baseline_context/metrics.json
+Strict accuracy: 0.1400 (70/500) | Relaxed accuracy: 0.3820 (191/500)

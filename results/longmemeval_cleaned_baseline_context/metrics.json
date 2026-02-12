@@ -1,0 +1,15 @@
+{
+  "total": 500,
+  "scored": 500,
+  "strict_correct": 70,
+  "strict_accuracy": 0.14,
+  "relaxed_correct": 191,
+  "relaxed_accuracy": 0.382,
+  "avg_latency_s": 0.5637411361840059,
+  "solver": "gemini",
+  "solver_cmd": null,
+  "gemini_model": "gemini-2.0-flash",
+  "task": "longmemeval",
+  "timeout_s": 120.0,
+  "input": "hf://xiaowu0162/longmemeval-cleaned/longmemeval_oracle.json"
+}

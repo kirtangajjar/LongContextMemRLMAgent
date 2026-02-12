@@ -2,7 +2,7 @@
 
 ## Baseline benchmark runner
 
-Use `scripts/run_baseline.py` for simple, single-turn baseline evaluation.
+Use `scripts/run_baseline.py` for baseline evaluation.
 
 ### Supported inputs
 - Local JSONL via `--input`
@@ -10,32 +10,26 @@ Use `scripts/run_baseline.py` for simple, single-turn baseline evaluation.
 
 Each row should include:
 - `question` (required)
-- `id` (optional)
-- `answer` or `gold` or `target` (optional, used for exact-match scoring)
+- `id` or `question_id` (optional)
+- `answer` or `gold` or `target` (optional, used for scoring)
+
+### Baseline mode for LongMemEval (no tools)
+Use `--task longmemeval` to include provided memory sessions (`haystack_sessions`, dates, IDs) in the prompt for each question.
 
 ### Solver modes
-- `--solver cmd` (default): runs `--solver-cmd` template with `{question}`
+- `--solver cmd` (default): runs `--solver-cmd` template with `{question}` / `{prompt}`
 - `--solver gemini`: uses Gemini directly with `GEMINI_API_KEY`
 
-### Example: local JSONL with command solver
-```bash
-python scripts/run_baseline.py \
-  --input data/benchmark.jsonl \
-  --output-dir results/baseline_cmd \
-  --solver cmd \
-  --solver-cmd "python my_solver.py --question {question}" \
-  --timeout 60
-```
-
-### Example: LongMemEval from Hugging Face with Gemini
+### Example: LongMemEval baseline run with Gemini
 ```bash
 export GEMINI_API_KEY="<your_key>"
 python scripts/run_baseline.py \
+  --task longmemeval \
   --solver gemini \
   --gemini-model gemini-2.0-flash \
   --hf-dataset xiaowu0162/longmemeval-cleaned \
   --hf-file longmemeval_oracle.json \
-  --output-dir results/longmemeval_cleaned_oracle_full \
+  --output-dir results/longmemeval_cleaned_baseline \
   --timeout 120
 ```
 
@@ -43,6 +37,10 @@ python scripts/run_baseline.py \
 - `predictions.jsonl`
 - `metrics.json`
 
-The runner logs question-level progress in stdout as:
+`metrics.json` includes strict and relaxed accuracy:
+- `strict_accuracy`: lowercase+whitespace normalized exact match
+- `relaxed_accuracy`: punctuation-insensitive with basic acceptable-variant parsing
+
+The runner logs question-level progress to stdout:
 - `[idx/total] start id=...`
-- `[idx/total] done id=... latency_s=...`
+- `[idx/total] done id=... latency_s=... strict=... relaxed=...`
