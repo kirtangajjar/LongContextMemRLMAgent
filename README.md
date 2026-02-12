@@ -13,23 +13,26 @@ Each row should include:
 - `id` or `question_id` (optional)
 - `answer` or `gold` or `target` (optional, used for scoring)
 
-### Baseline mode for LongMemEval (no tools)
-Use `--task longmemeval` to include provided memory sessions (`haystack_sessions`, dates, IDs) in the prompt for each question.
+### Baseline mode for LongMemEval (no GEPA/Pro/tools)
+Use `--task longmemeval` to include memory context (`haystack_sessions`, session IDs, dates, question date).
 
 ### Solver modes
-- `--solver cmd` (default): runs `--solver-cmd` template with `{question}` / `{prompt}`
-- `--solver gemini`: uses Gemini directly with `GEMINI_API_KEY`
+- `--solver cmd` (default): command template mode
+- `--solver gemini`: one-pass Gemini
+- `--solver rlm`: iterative RLM-style loop (baseline focus)
 
-### Example: LongMemEval baseline run with Gemini
+### Example: baseline-focused RLM-style run
 ```bash
 export GEMINI_API_KEY="<your_key>"
 python scripts/run_baseline.py \
   --task longmemeval \
-  --solver gemini \
-  --gemini-model gemini-2.0-flash \
+  --solver rlm \
+  --gemini-model gemini-3-flash-preview \
+  --temperature 0.0 \
+  --rlm-max-steps 3 \
   --hf-dataset xiaowu0162/longmemeval-cleaned \
   --hf-file longmemeval_oracle.json \
-  --output-dir results/longmemeval_cleaned_baseline \
+  --output-dir results/longmemeval_cleaned_baseline_rlm \
   --timeout 120
 ```
 
@@ -37,10 +40,11 @@ python scripts/run_baseline.py \
 - `predictions.jsonl`
 - `metrics.json`
 
-`metrics.json` includes strict and relaxed accuracy:
-- `strict_accuracy`: lowercase+whitespace normalized exact match
-- `relaxed_accuracy`: punctuation-insensitive with basic acceptable-variant parsing
+`metrics.json` includes:
+- strict/relaxed accuracy
+- average steps (for iterative solver)
+- protocol metadata (`protocol` object)
 
-The runner logs question-level progress to stdout:
+Progress trace format:
 - `[idx/total] start id=...`
-- `[idx/total] done id=... latency_s=... strict=... relaxed=...`
+- `[idx/total] done id=... latency_s=... steps=... strict=... relaxed=...`
