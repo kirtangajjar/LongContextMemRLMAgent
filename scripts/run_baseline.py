@@ -12,6 +12,7 @@ Supports:
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import json
 import os
 import re
@@ -244,16 +245,21 @@ def build_gemini_solver(model: str, temperature: float):
     adapter = GeminiAdapter(model=model, temperature=temperature)
 
     def _solve(prompt: str, timeout_s: float, row: dict[str, Any]) -> tuple[str, float, str | None, int | None]:
-        _ = timeout_s
         _ = row
         start = time.perf_counter()
         try:
-            answer = adapter.complete(
-                prompt,
-                system_instruction="Answer accurately using provided memory context. Return only final answer text.",
-            )
+            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+                future = pool.submit(
+                    adapter.complete,
+                    prompt,
+                    "Answer accurately using provided memory context. Return only final answer text.",
+                )
+                answer = future.result(timeout=timeout_s)
             latency = time.perf_counter() - start
             return answer, latency, None, 1
+        except concurrent.futures.TimeoutError:
+            latency = time.perf_counter() - start
+            return "", latency, f"timeout after {timeout_s:.1f}s", 1
         except Exception as exc:  # noqa: BLE001
             latency = time.perf_counter() - start
             return "", latency, str(exc), 1
@@ -294,8 +300,17 @@ def build_rlm_solver(model: str, temperature: float, max_steps: int):
     adapter = GeminiAdapter(model=model, temperature=temperature)
 
     def _solve(prompt: str, timeout_s: float, row: dict[str, Any]) -> tuple[str, float, str | None, int | None]:
-        _ = timeout_s
         start = time.perf_counter()
+
+        def timed_complete(prompt_text: str, system_instruction: str) -> str:
+            elapsed = time.perf_counter() - start
+            remaining = max(0.0, timeout_s - elapsed)
+            if remaining <= 0:
+                raise TimeoutError(f"timeout after {timeout_s:.1f}s")
+            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+                future = pool.submit(adapter.complete, prompt_text, system_instruction)
+                return future.result(timeout=remaining)
+
         try:
             question = str(row.get("question", ""))
             mem_index = _build_memory_index(row)
@@ -315,7 +330,7 @@ def build_rlm_solver(model: str, temperature: float, max_steps: int):
                     f"Known session ids: {', '.join(mem_index.keys())}\n"
                     f"Scratchpad:\n{chr(10).join(scratch) or '(empty)'}\n"
                 )
-                raw = adapter.complete(planner_prompt, "Return strict JSON only.")
+                raw = timed_complete(planner_prompt, "Return strict JSON only.")
                 try:
                     decision = json.loads(raw)
                 except json.JSONDecodeError:
@@ -352,9 +367,12 @@ def build_rlm_solver(model: str, temperature: float, max_steps: int):
                 f"Scratchpad:\n{chr(10).join(scratch)}\n\n"
                 f"Full context:\n{prompt}"
             )
-            final = adapter.complete(final_prompt, "Return only final answer text.")
+            final = timed_complete(final_prompt, "Return only final answer text.")
             latency = time.perf_counter() - start
             return final, latency, None, max_steps
+        except TimeoutError as exc:
+            latency = time.perf_counter() - start
+            return "", latency, str(exc), None
         except Exception as exc:  # noqa: BLE001
             latency = time.perf_counter() - start
             return "", latency, str(exc), None
